@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+
+\usepackage{graphicx}
+
+\usepackage[parfill]{parskip}
+
+\usepackage{url}
+
+\usepackage{xcolor}
+
+\newcounter{TODO}
+\newcommand{\TODO}[1]{%
+	\stepcounter{TODO}
+	\colorbox{yellow}{%
+		\mbox{%
+			\begin{minipage}{\textwidth}
+				TODO \arabic{TODO}. #1
+			\end{minipage}
+		} % /mbox
+	} % /colorbox
+} % /newcomand
+
+\title{%
+	Pithia
+} % /title
+\author{%
+	Scott A. Howland and Mark I. Borkum
+} % /author
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Background}
+
+\TODO{%
+	Science question
+}
+
+\TODO{%
+	Literature survey
+}
+
+\section{Design}
+
+\TODO{%
+	Software requirements
+}
+
+\TODO{%
+	Capability matrix
+}
+
+\TODO{%
+	Proposed software architecture
+}
+
+\section{Implementation}
+
+\TODO{%
+	Implementation
+}
+
+\TODO{%
+	TensorFlow\cite{tensorflow2015-whitepaper}
+}
+
+\section{Testing}
+
+\TODO{%
+	Testing methodology
+}
+
+\TODO{%
+	Training and testing datasets
+}
+
+\section{Evaluation}
+
+\TODO{%
+	Evaluation metrics
+}
+
+\section{Conclusions}
+
+\TODO{%
+	Conclusions
+}
+
+\bibliographystyle{unsrt}
+\bibliography{document}
+
+\end{document}
